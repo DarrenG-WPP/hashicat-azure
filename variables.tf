@@ -6,12 +6,13 @@
 # prompted to enter it (or define it via config file or command line flags.)
 
 variable "prefix" {
-  description = "This prefix will be included in the name of most resources."
+  description = "be included in the name of most resources."
+  default = "darren-griffith"
 }
 
 variable "location" {
   description = "The region where the virtual network is created."
-  default     = "centralus"
+  default     = "UK South"
 }
 
 variable "address_space" {
@@ -73,3 +74,4 @@ variable "placeholder" {
   default     = "placekitten.com"
   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
 }
+
